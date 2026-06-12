@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=DM+Serif+Display&display=swap');
+
+body.auth-body {
+  background: linear-gradient(160deg, #e8735a 0%, #c55840 40%, #a04030 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.auth-wrap {
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-logo {
+  text-align: center;
+  color: white;
+  margin-bottom: 24px;
+}
+.auth-logo-icon { font-size: 3.5rem; margin-bottom: 8px; }
+.auth-logo h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  margin: 0;
+}
+.auth-logo p { font-size: 0.88rem; opacity: 0.88; font-weight: 600; margin-top: 4px; }
+
+.auth-card {
+  background: white;
+  border-radius: 24px;
+  padding: 28px 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.auth-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: #2d2320;
+  margin-bottom: 20px;
+}
+
+.field-group { margin-bottom: 16px; }
+
+.form-label {
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: #9b8880;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  border: 2px solid #f0e4dc;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  outline: none;
+  box-sizing: border-box;
+}
+.form-control:focus {
+  border-color: #e8735a;
+  box-shadow: 0 0 0 3px rgba(232,115,90,0.15);
+}
+
+.pass-wrap { position: relative; }
+.pass-toggle {
+  position: absolute;
+  right: 12px; top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.btn-auth {
+  width: 100%;
+  background: linear-gradient(135deg, #e8735a, #c55840);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: opacity 0.2s;
+}
+.btn-auth:hover { opacity: 0.9; }
+
+.auth-switch {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #9b8880;
+  margin-bottom: 0;
+}
+.auth-switch a { color: #e8735a; font-weight: 800; text-decoration: none; }
+
+.alert-error {
+  background: #fff0f0;
+  border: 1.5px solid #ffcdd2;
+  color: #c62828;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+.alert-success {
+  background: #f0fff4;
+  border: 1.5px solid #c8e6c9;
+  color: #2e7d32;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+.alert-success a { color: #2e7d32; font-weight: 800; }
